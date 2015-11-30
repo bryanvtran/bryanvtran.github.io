@@ -5,18 +5,34 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="viewport">
-      <div id="world">
-      </div>
-    </div>
+
+  <div class="row intro">
+    <h1 class="title text-centered">Bryan Tran</h1>
+  </div>
+
+  <div class="row">
+    <a href="https://www.linkedin.com/in/bryanvantran"><i class="fa fa-linkedin-square fa-4x icons"></i></a>
+    <a href="https://www.facebook.com/bryanvantran"><i class="fa fa-facebook-square fa-4x icons"></i></a>
+    <a href="https://www.instagram.com/tranbryan"><i class="fa fa-instagram fa-4x icons"></i></a>
+    <a href="mailto:bryanvantran@ucla.edu"><i class="fa fa-envelope-square fa-4x icons"></i></a>
+  </div>
+
+  <div id="viewport">
+    <div id="world"></div>
+  </div>
+
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script>
+$(".night").click(function() {
+  alert("testing");
+});
+
 var clouds = [];
 var NUM_CLOUDS = 50;
 

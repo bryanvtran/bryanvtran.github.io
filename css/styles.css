@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 #viewport {
+        z-index: -1;
         -webkit-perspective: 1000;
         -moz-perspective: 1000;
         -o-perspective: 1000;
@@ -35,3 +36,30 @@ body {
         margin-top: -128px;
         margin-left: -128px;
     }
+
+.row {
+    text-align: center;
+    color: #fff;
+}
+
+.intro {
+  margin-top: 20%;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #fff;
+  font-size: 72px;
+}
+
+.icons {
+  padding: 25px 10px 0 10px;
+}
+
+.icons:hover {
+  color: rgba(255, 255, 255, .75);
+}
+
+a {
+  color: #fff;
+}
