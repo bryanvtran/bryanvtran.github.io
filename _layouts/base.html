@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
+
+        <meta name="author" content="Bryan Tran">
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+        {% comment %}<link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}"/>{% endcomment %}
+        {% comment %}<link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">{% endcomment %}
+        <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" type="text/css">
+    </head>
+    <body>
+        {% include header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
+        <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    </body>
+</html>
