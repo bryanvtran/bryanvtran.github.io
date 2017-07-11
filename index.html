@@ -8,9 +8,28 @@ keywords: keywords,go,here
 
 ---
 
-<div class="container container--sm">
-    <h1>Index page.</h1>
-    <p>This is the index page.</p>
+<div class="container container--sm intro">
+    <h1 class="intro__title">Good <span id="greeting">day</span>,</h1>
+    <!-- TODO: edit this text -->
+    <p class="intro__about">My name is Bryan, and I am currently studying computer science at UCLA. I am interested in anything web dev, fashion, music, photography, weightlifting, and traveling.</p>
+    <p class="intro__about">This is my personal playground that I will use to showcase some of the projects I have participated in. I love meeting passionate people, so if you want to get in touch or have an awesome idea for a project, feel free to shoot me an email at <a href="mailto:bryanvantran@ucla.edu">bryanvantran@ucla.edu</a>.</p>
     <button class="btn btn-primary">Button</button>
     <button class="btn">Button</button>
 </div>
+
+<script>
+    var greetingElement = document.getElementById('greeting');
+    var curDate = new Date();
+    if (curDate.getHours() < 12) {
+        greetingElement.innerHTML = 'morning';
+    }
+    else if (curDate.getHours() >= 12 && curDate.getHours() <= 17) {
+        greetingElement.innerHTML = 'afternoon';
+    }
+    else if (curDate.getHours() > 17 && curDate.getHours() <= 24) {
+        greetingElement.innerHTML = 'evening';
+    }
+    else {
+        greetingElement.innerHTML = 'day';
+    }
+</script>
