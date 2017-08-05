@@ -17,13 +17,31 @@ a {
   color: $link-color;
   outline: none;
   text-decoration: none;
+  transition: $base-transition;
+  border-bottom: 1px solid $link-color;
 
   &:focus,
   &:hover,
   &:active,
   &.active {
     color: $link-color-dark;
-    text-decoration: underline;
+    border-color: $link-color-dark;
+  }
+
+  &.underline {
+    color: $font-color;
+    border-bottom: 3px solid $primary-color-light;
+    -webkit-box-shadow: inset 0 -4px 0 $primary-color-light;
+    box-shadow: inset 0 -4px 0 $primary-color-light;
+    transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      text-decoration: none;
+      background-color: $primary-color-light;
+    }
   }
 }
 
@@ -83,4 +101,8 @@ ul {
   ul {
     list-style-type: circle;
   }
+}
+
+p {
+  color: $font-color-light;
 }

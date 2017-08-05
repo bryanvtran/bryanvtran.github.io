@@ -1,11 +1,16 @@
 .nav {
-    padding: 32px 0;
+    padding: 24px $container-padding;
+
+    @include media("<small") {
+        padding: $container-padding-sm;
+    }
 
     .nav__logo {
         color: $font-color;
         font-size: $font-size-xlg;
         letter-spacing: 1px;
         text-transform: uppercase;
+        border: none;
 
         @include media("<small") {
             display: block;
@@ -35,24 +40,25 @@
             li {
                 display: inline-block;
                 margin: 0;
-                padding-left: 18px;
+                padding-left: 24px;
                 font-size: $font-size-lg;
 
                 @include media("<small") {
-                    padding: 0 8px;
+                    padding: 0 16px;
                 }
 
                 a {
                     color: $black;
                     vertical-align: middle;
+                    border: none;
+                    padding-bottom: 4px;
 
                     &:hover, &:focus {
                         text-decoration: none;
                     }
 
                     &.active {
-                        border-bottom: 1px solid $black;
-                        text-decoration: none;
+                        border-bottom: 1px solid $font-color;
                     }
                 }
             }

@@ -1,5 +1,6 @@
 .intro {
-    padding-top: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     
     .intro__title {
         margin-bottom: 1.6rem;
@@ -9,5 +10,41 @@
         font-size: $font-size-xlg;
         margin-bottom: 1.6rem;
         font-weight: 300;
+    }
+}
+
+.projects {
+    .projects__title {
+        text-align: center;
+        font-size: 3.2rem;
+        margin-bottom: 32px;
+    }
+
+    .projects__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include media("<small") {
+            display: block;
+        }
+
+        .projects__list__item {
+            width: 32%;
+            margin-bottom: 16px;
+
+            @include media("<small") {
+                padding: 0;
+            }
+            
+            .projects__list__item__title {
+                margin-bottom: 0;
+                color: $font-color;
+            }
+
+            .projects__list__item__description {
+                
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 .social-icons {
     text-align: center;
-    margin: 32px 0 16px;
+    margin: 64px 0 32px;
 
     ul {
         list-style: none;
@@ -10,8 +10,12 @@
             display: inline;
             padding: 16px;
 
+            a {
+                border: none;
+            }
+
             img {
-                height: 25px;
+                height: 20px;
             }
         }
     }

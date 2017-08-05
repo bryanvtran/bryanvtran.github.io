@@ -1,11 +1,11 @@
 // colors
-$black: #454d5d;
-$gray-dark: #727e96;
-$gray: #acb3c2;
-$gray-light: #e7e9ed;
+$black: #2D2D2D;
+$gray-dark: #808080;
+$gray: #A8A8A8;
+$gray-light: #DCDCDC;
 $white: #fff;
 
-$blue: #167FFC;
+$blue: #7ECDF8;
 $red: #FD3D39;
 $primary-color: $blue;
 $primary-color-dark: darken($primary-color, 3%);
@@ -20,8 +20,9 @@ $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Rob
 $fallback-font-family: "Helvetica Neue", sans-serif;
 $body-font-family: $base-font-family, $fallback-font-family;
 $font-color: $black;
-$link-color: $primary-color;
-$link-color-dark: darken($link-color, 10%);
+$font-color-light: $gray-dark;
+$link-color: $font-color-light;
+$link-color-dark: $font-color;
 $html-font-size: 10px;
 $html-line-height: 1.428571429;
 $font-size: 1.4rem;
@@ -40,7 +41,8 @@ $width-xl: 1140px;
 $container-width: $width-lg;
 $container-width-lg: $width-xl;
 $container-width-sm: $width-md;
-$container-padding: 16px;
+$container-padding: 32px;
+$container-padding-sm: 16px;
 
 $breakpoints: (xsmall: $width-xs, small: $width-sm, medium: $width-md, large: $width-lg, xlarge: $width-xl);
 
