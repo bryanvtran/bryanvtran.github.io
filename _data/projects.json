@@ -1,14 +1,17 @@
 [
     {
         "title": "Project 1",
-        "shortDescription": "Lorem ipsum dolor sit amet"
+        "shortDescription": "Lorem ipsum dolor sit amet",
+        "thumbnail": "assets/images/projects/placeholder-1.jpeg"
     },
     {
         "title": "Project 2",
-        "shortDescription": "Lorem ipsum dolor sit amet"
+        "shortDescription": "Lorem ipsum dolor sit amet",
+        "thumbnail": "assets/images/projects/placeholder-2.jpeg"
     },
     {
         "title": "Project 3",
-        "shortDescription": "Lorem ipsum dolor sit amet"
-    }
+        "shortDescription": "Lorem ipsum dolor sit amet",
+        "thumbnail": "assets/images/projects/placeholder-3.jpeg"
+    },
 ]

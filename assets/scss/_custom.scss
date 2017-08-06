@@ -1,6 +1,11 @@
 .intro {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 80px;
+    padding-bottom: 112px;
+
+    @include media("<medium") {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
     
     .intro__title {
         margin-bottom: 1.6rem;
@@ -31,19 +36,31 @@
 
         .projects__list__item {
             width: 32%;
-            margin-bottom: 16px;
+            margin-bottom: 32px;
+
+            @include media(">small", "<medium") {
+                padding: 0;
+                width: 49%;
+            }
 
             @include media("<small") {
                 padding: 0;
+                width: 100%;
+            }
+
+            a {
+                border: none;
             }
             
             .projects__list__item__title {
                 margin-bottom: 0;
                 color: $font-color;
+                line-height: 1.4;
             }
 
-            .projects__list__item__description {
-                
+            .projects__list__item__thumbnail {
+                width: 100%;
+                margin-bottom: 8px;
             }
         }
     }
