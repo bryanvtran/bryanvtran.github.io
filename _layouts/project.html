@@ -8,15 +8,18 @@ layout: base
   <p>{{ project.description }}</p>
 </div>
 
+{% if project.headerImg %}
 <div class="project-header">
-  <!-- Image goes here -->
+  <img src="{{ project.headerImg }}" alt="{{ project.title }}">
 </div>
+{% endif %}
 
 <div class="container project-body">
-  <!-- Main content goes here (images and pictures) -->
   {{ content }}
-</div>
 
-<a href="#">Previous</a>
-<a href="/">Home</a>
-<a href="#">Next</a>
+  <div class="project-nav">
+    {% if project.prev %}<a href="/projects/{{ project.prev }}">Prev</a>{% endif %}
+    <a href="/">Home</a>
+    {% if project.next %}<a href="/projects/{{ project.next }}">Next</a>{% endif %}
+  </div>
+</div>

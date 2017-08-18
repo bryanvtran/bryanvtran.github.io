@@ -1,21 +1,26 @@
 [
     {
         "title": "Project 1",
+        "slug": "project-1",
         "shortDescription": "Lorem ipsum dolor sit amet",
+        "thumbnail": "/assets/images/projects/placeholder-3.jpeg",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "thumbnail": "assets/images/projects/placeholder-3.jpeg",
-        "slug": "project-1"
+        "url": "www.bryanvtran.com",
+        "date": "2017",
+        "headerImg": "/assets/images/projects/whereshouldieat/main.jpg",
+        "prev": "project-0",
+        "next": "project-2"
     },
     {
         "title": "Project 2",
-        "shortDescription": "Lorem ipsum dolor sit amet",
+        "slug": "project-2",
         "thumbnail": "assets/images/projects/placeholder-3.jpeg",
-        "slug": "project-2"
+        "shortDescription": "Lorem ipsum dolor sit amet"
     },
     {
         "title": "Project 3",
-        "shortDescription": "Lorem ipsum dolor sit amet",
+        "slug": "project-3",
         "thumbnail": "assets/images/projects/placeholder-3.jpeg",
-        "slug": "project-3"
+        "shortDescription": "Lorem ipsum dolor sit amet",
     },
 ]
