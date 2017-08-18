@@ -50,11 +50,12 @@
                 a {
                     color: $black;
                     vertical-align: middle;
-                    border: none;
+                    border: transparent;
                     padding-bottom: 4px;
 
                     &:hover, &:focus {
                         text-decoration: none;
+                        border-bottom: 1px solid $font-color;
                     }
 
                     &.active {
