@@ -109,3 +109,22 @@
     border: none;
   }
 }
+
+.project-intro {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .project-intro__title {
+        margin-bottom: 4px;
+    }
+    .project-intro__subtitle {
+        margin-bottom: 16px;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+    .project-intro__description {
+
+    }
+}

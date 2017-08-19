@@ -4,8 +4,9 @@ layout: base
 
 <div class="container project-intro">
   {% assign project = site.data.projects[page.project.index] %}
-  <h1>{{ project.title }}</h1>
-  <p>{{ project.description }}</p>
+  <h1 class="project-intro__title">{{ project.title }}</h1>
+  <p class="project-intro__subtitle"><a href="{{ project.website }}">{{ project.website }}</a> | {{ project.year }}</p>
+  <p class="project-intro__description">{{ project.description }}</p>
 </div>
 
 {% if project.headerImg %}
