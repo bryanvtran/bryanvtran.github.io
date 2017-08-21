@@ -69,6 +69,28 @@
     }
 }
 
+.project-intro {
+    padding-top: 80px;
+    padding-bottom: 96px;
+
+    .project-intro__title {
+        margin-bottom: 6px;
+    }
+    .project-intro__subtitle {
+        margin-bottom: 32px;
+        font-size: 1.2em;
+
+        a {
+            text-decoration: none;
+        }
+    }
+    .project-intro__description {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+}
+
+
 .project-header {
   height: 600px;
   max-height: 60vh;
@@ -88,21 +110,23 @@
   margin: 0 auto;
 
   h2 {
-    text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
-  p, img, h2 {
+  p, h2 {
     margin-bottom: 16px;
   }
 
   img {
     width: 100%;
+    margin: 32px auto;
   }
 }
 
 .project-nav {
   text-align: center;
+  margin: 32px auto;
+
   a {
     display: inline-block;
     margin: 0 16px;
@@ -110,21 +134,63 @@
   }
 }
 
-.project-intro {
-    padding-top: 64px;
-    padding-bottom: 64px;
 
-    .project-intro__title {
-        margin-bottom: 4px;
-    }
-    .project-intro__subtitle {
-        margin-bottom: 16px;
-        
-        a {
-            text-decoration: none;
-        }
-    }
-    .project-intro__description {
+.photos {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+  &:after {
+    content: "";
+    flex: auto;
+  }
+
+  .photos__item {
+    width: calc(100%/3);
+    margin-bottom: .5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @include media(">small", "<medium") {
+        width: 50%;
     }
+
+    @include media("<small") {
+        padding: 0;
+        width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+}
+
+.photo-viewer {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+  }
 }
