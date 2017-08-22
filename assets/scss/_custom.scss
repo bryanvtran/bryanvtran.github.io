@@ -71,7 +71,7 @@
 
 .project-intro {
     padding-top: 80px;
-    padding-bottom: 96px;
+    padding-bottom: 112px;
 
     .project-intro__title {
         margin-bottom: 6px;
@@ -136,10 +136,10 @@
 
 
 .photos {
-  padding: 64px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 80px;
 
   &:after {
     content: "";
@@ -167,6 +167,33 @@
       height: 250px;
       object-fit: cover;
       overflow: hidden;
+    }
+  }
+}
+
+.photos-nav {
+  padding-top: 80px;
+  text-align: center;
+  ul {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      padding: 8px 16px;
+
+      @include media("<medium") {
+        padding: 8px;
+      }
+
+      a {
+        color: $font-color;
+        border-bottom: none;
+
+        &.active {
+          border-bottom: 1px solid $font-color;
+        }
+      }
     }
   }
 }
