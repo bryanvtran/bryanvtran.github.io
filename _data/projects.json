@@ -1,12 +1,12 @@
 [
     {
-        "title": "Project 1",
-        "slug": "project-1",
-        "shortDescription": "Lorem ipsum dolor sit amet",
+        "title": "Supreme ATC Bot",
+        "slug": "supreme",
+        "shortDescription": "Automated checkout script",
         "thumbnail": "/assets/images/projects/placeholder-3.jpeg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "website": "www.bryanvtran.com",
-        "date": "2017",
+        "description": "I developed a script that scans the <a href=\"//supremenewyork.com\">Supreme</a> online store for new items based on specific keywords/images and automatically check out when the item is found. Using a combination of Python Requests, Selenium WebDriver, and PhantomJS, I was able to automate the process to purchase items quicker (~2 seconds to find the item and place the order).",
+        "website": "github.com/bryanvtran/supreme",
+        "date": "2016",
         "headerImg": "/assets/images/projects/whereshouldieat/main.jpg",
         "prev": "project-0",
         "next": "project-2"

@@ -5,7 +5,7 @@ layout: base
 <div class="container project-intro">
   {% assign project = site.data.projects[page.project.index] %}
   <h1 class="project-intro__title">{{ project.title }}</h1>
-  <p class="project-intro__subtitle"><a href="{{ project.website }}">{{ project.website }}</a> | {{ project.date }}</p>
+  <p class="project-intro__subtitle"><a target="_blank" href="//{{ project.website }}">{{ project.website }}</a> | {{ project.date }}</p>
   <p class="project-intro__description">{{ project.description }}</p>
 </div>
 

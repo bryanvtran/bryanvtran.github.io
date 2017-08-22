@@ -17,7 +17,7 @@ keywords: keywords,go,here
 <section class="container projects">
     {% comment %} <h1 class="projects__title">Projects</h1> {% endcomment %}
     <div class="projects__list">
-    {% for project in site.data.projects %}
+    {% for project in site.data.projects reversed %}
         <div class="projects__list__item">
             <a href="/projects/{{ project.slug }}">
                 <img class="projects__list__item__thumbnail" src="{{ project.thumbnail }}" alt="{{ project.title }}">
