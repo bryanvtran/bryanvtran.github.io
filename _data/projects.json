@@ -55,8 +55,20 @@
         "date": "2016",
         "description": "I worked with startups and other organizations on campus to put together a startup fair for LA-based startups to connect with UCLA students. I was responsible for the website and promotional material such as flyers, and t-shirts",
         "headerImg": "/assets/images/projects/startupfairla/main.jpg",
-        "prev": "",
+        "prev": "arkaive",
         "next": "sep"
+    },
+    {
+        "title": "Arkaive",
+        "slug": "arkaive",
+        "shortDescription": "Educational technology startup",
+        "thumbnail": "/assets/images/projects/arkaive/main.jpg",
+        "website": "www.arkaive.com",
+        "date": "2016",
+        "description": "I focused on the front-end, bridging the gap between design and engineering to build a responsive, user-friendly dashboard for school administrators and athletic departments. Also, I was responsible for creating mockups of new app features and promotional materials such as decks and flyers",
+        "headerImg": "/assets/images/projects/arkaive/main.jpg",
+        "prev": "",
+        "next": "startupfairla"
     }
 ]
 

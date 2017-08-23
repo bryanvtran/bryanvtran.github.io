@@ -25,6 +25,8 @@ document.addEventListener('keyup', function(e) {
 
 photosNavItems.forEach(function(link) {
   link.addEventListener('click', function(e) {
+    e.preventDefault();
+
     var tag = this.innerHTML.toLowerCase();
 
     // removing old active tag and adding new active tag
