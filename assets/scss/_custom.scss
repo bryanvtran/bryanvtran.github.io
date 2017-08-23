@@ -74,20 +74,20 @@
     padding-bottom: 112px;
 
     .project-intro__title {
-        margin-bottom: 6px;
+        margin-bottom: 4px;
         font-size: 3rem;
     }
     .project-intro__subtitle {
-        margin-bottom: 32px;
-        font-size: 1.2em;
+        margin-bottom: 28px;
+        font-size: 1.6rem;
 
         a {
             text-decoration: none;
         }
     }
     .project-intro__description {
-      font-size: 1.2em;
-      line-height: 1.6;
+      font-size: 1.8rem;
+      line-height: 1.7;
     }
 }
 
@@ -112,6 +112,10 @@
 
   h2 {
     font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
   }
 
   p, h2 {

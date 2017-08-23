@@ -3,24 +3,72 @@
         "title": "Supreme ATC Bot",
         "slug": "supreme",
         "shortDescription": "Automated checkout script",
-        "thumbnail": "/assets/images/projects/placeholder-3.jpeg",
-        "description": "I developed a script that scans the <a href=\"//supremenewyork.com\">Supreme</a> online store for new items based on specific keywords/images and automatically check out when the item is found. Using a combination of Python Requests, Selenium WebDriver, and PhantomJS, I was able to automate the process to purchase items quicker (~2 seconds to find the item and place the order).",
+        "thumbnail": "/assets/images/projects/supreme/main.png",
         "website": "github.com/bryanvtran/supreme",
         "date": "2016",
-        "headerImg": "/assets/images/projects/whereshouldieat/main.jpg",
-        "prev": "project-0",
-        "next": "project-2"
+        "description": "I developed a script that scans the <a href=\"//supremenewyork.com\">Supreme</a> online store for new items based on specific keywords/images and automatically check out when the item is found. Using a combination of Python Requests, Selenium WebDriver, and PhantomJS, I was able to automate the process to purchase items quicker (~2 seconds to find the item and place the order).",
+        "headerImg": "/assets/images/projects/supreme/main.png",
+        "prev": "mcmxc"
     },
     {
-        "title": "Project 2",
-        "slug": "project-2",
-        "thumbnail": "assets/images/projects/placeholder-3.jpeg",
-        "shortDescription": "Lorem ipsum dolor sit amet"
+        "title": "MCMXC Clothing",
+        "slug": "mcmxc",
+        "shortDescription": "Clothing company",
+        "thumbnail": "/assets/images/projects/mcmxc/main.jpg",
+        "website": "1990clothing.com",
+        "date": "2016",
+        "description": "As a web developer, I designed and built the website for a local clothing company and integrated it with the online clothing store. I was also responsible for photographing and editing several lines of clothing to be used in the website lookbook and catalog.",
+        "headerImg": "/assets/images/projects/mcmxc/main.jpg",
+        "prev": "yume",
+        "next": "supreme"
     },
     {
-        "title": "Project 3",
-        "slug": "project-3",
-        "thumbnail": "assets/images/projects/placeholder-3.jpeg",
-        "shortDescription": "Lorem ipsum dolor sit amet",
+        "title": "Yume Koi & Gardens",
+        "slug": "yume",
+        "shortDescription": "eCommerce store for Japanese koi",
+        "thumbnail": "/assets/images/projects/yume/main.png",
+        "website": "www.yumekoigardens.com",
+        "date": "2016",
+        "description": "Developed a new eCommerce website using Shopify and Craft CMS to sell koi and koi products with ease of use in mind for the client. Currently working on developing a separate website for \"Koi For Sale\" using Craft CMS for content management and blogging",
+        "headerImg": "/assets/images/projects/yume/main.png",
+        "prev": "sep",
+        "next": "mcmxc"
     },
+    {
+        "title": "Sigma Eta Pi",
+        "slug": "sep",
+        "shortDescription": "Co-ed Entrepreneurship Fraternity",
+        "thumbnail": "/assets/images/projects/sep/main.png",
+        "website": "www.uclasep.com",
+        "date": "2015-2016",
+        "description": "Tasked with redesigning and deploying the organization’s new responsive website, my goal was to optimize user experience and increase traffic with a professional, appealing design for the new website. Furthermore, I created marketing materials such as t-shirts, flyers, and banners using Adobe Photoshop and Illustrator",
+        "headerImg": "/assets/images/projects/sep/main.png",
+        "prev": "startupfairla",
+        "next": "yume"
+    },
+    {
+        "title": "Startup Fair LA",
+        "slug": "startupfairla",
+        "shortDescription": "Connecting talent with startups",
+        "thumbnail": "/assets/images/projects/startupfairla/main.jpg",
+        "website": "www.startupfair.la",
+        "date": "2016",
+        "description": "I worked with startups and other organizations on campus to put together a startup fair for LA-based startups to connect with UCLA students. I was responsible for the website and promotional material such as flyers, and t-shirts",
+        "headerImg": "/assets/images/projects/startupfairla/main.jpg",
+        "prev": "",
+        "next": "sep"
+    }
 ]
+
+// {
+//     "title": "",
+//     "slug": "",
+//     "shortDescription": "",
+//     "thumbnail": "/assets/images/projects/",
+//     "website": "",
+//     "date": "2016",
+//     "description": "",
+//     "headerImg": "/assets/images/projects/",
+//     "prev": "",
+//     "next": ""
+// }
