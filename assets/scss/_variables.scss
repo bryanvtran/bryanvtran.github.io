@@ -1,0 +1,54 @@
+// colors
+$black: #2D2D2D;
+$gray-dark: #808080;
+$gray: #A8A8A8;
+$gray-light: #DCDCDC;
+$white: #fff;
+
+$blue: #7ECDF8;
+$red: #FD3D39;
+$primary-color: $blue;
+$primary-color-dark: darken($primary-color, 3%);
+$primary-color-light: lighten($primary-color, 3%);
+$secondary-color: lighten($primary-color, 40%);
+$secondary-color-dark: darken($secondary-color, 3%);
+$secondary-color-light: lighten($secondary-color, 3%);
+
+
+// typography
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+$fallback-font-family: "Helvetica Neue", sans-serif;
+$body-font-family: $base-font-family, $fallback-font-family;
+$font-color: $black;
+$font-color-light: $gray-dark;
+$link-color: $font-color-light;
+$link-color-dark: $font-color;
+$html-font-size: 10px;
+$html-line-height: 1.428571429;
+$font-size: 1.4rem;
+$font-size-sm: 1.2rem;
+$font-size-lg: 1.6rem;
+$font-size-xlg: 1.8rem;
+
+
+// layout
+$width-xs: 480px;
+$width-sm: 600px;
+$width-md: 840px;
+$width-lg: 960px;
+$width-xl: 1140px;
+
+$container-width: $width-lg;
+$container-width-lg: $width-xl;
+$container-width-sm: $width-md;
+$container-padding: 32px;
+$container-padding-sm: 16px;
+
+$breakpoints: (xsmall: $width-xs, small: $width-sm, medium: $width-md, large: $width-lg, xlarge: $width-xl);
+
+// sizes
+$border-width: 1px;
+$border-radius: 4px;
+
+// misc
+$base-transition: all .2s ease;

@@ -1,165 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
+---
+layout: base
+permalink: /
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+# title
+description: Description of the website goes here.
+keywords: keywords,go,here
+---
 
-    <title>Bryan Tran | Aspiring Developer</title>
-    <meta name="description" content="My name is Bryan. I'm a computer science student at UCLA with a passion in design and obession with simplicity. I liked to think of this page as my playground. Interested in anything technology, startups, fashion, weightlifting, and traveling. If you have an awesome idea for a project or if you just wanna talk about life, feel free to contact me!">
-    <meta name="author" content="Bryan Tran">
+<section class="container intro">
+    <h1 class="intro__title">Good <span id="greeting">day</span>,</h1>
+    <!-- TODO: edit this text -->
+    <p class="intro__about">My name is Bryan, and I am currently studying computer science at <a href="#">UCLA</a>. I am interested in anything web dev, fashion, music, photography, weightlifting, and traveling.</p>
+    <p class="intro__about">This is my personal playground that I will use to showcase some of the projects I have participated in. I love meeting passionate people, so if you want to get in touch or have an awesome idea for a project, feel free to shoot me an email at <a href="mailto:bryanvantran@ucla.edu">bryanvantran@ucla.edu</a>.</p>
+</section>
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<section class="container projects">
+    {% comment %} <h1 class="projects__title">Projects</h1> {% endcomment %}
+    <div class="projects__list">
+    {% for project in site.data.projects reversed %}
+        <div class="projects__list__item">
+            <a href="/{{ project.slug }}">
+                <img class="projects__list__item__thumbnail" src="{{ project.thumbnail }}" alt="{{ project.title }}">
+                <p class="projects__list__item__title">{{ project.title }}</p>
+                <p class="projects__list__item__description">{{ project.shortDescription }}</p>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</section>
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-70073996-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-</head>
-<body>
-
-  <div class="row intro">
-  <img class="headshot" src="images/bryantran.jpeg" alt="">
-  </div>
-
-  <div class="row">
-    <h1 class="title text-centered">Bryan Tran</h1>
-  </div>
-
-  <div class="row">
-    <a href="https://www.linkedin.com/in/bryanvantran"><i class="fa fa-linkedin-square fa-2x icons"></i></a>
-    <a href="https://www.facebook.com/bryanvantran"><i class="fa fa-facebook-square fa-2x icons"></i></a>
-    <a href="https://www.instagram.com/tranbryan"><i class="fa fa-instagram fa-2x icons"></i></a>
-    <a href="mailto:bryanvantran@ucla.edu"><i class="fa fa-envelope fa-2x icons"></i></a>
-    <a href="bryantran-resume.pdf"><i class="fa fa-file-text fa-2x icons" style="font-size: 24px;"></i></a>
-  </div>
-
-
-  <div id="viewport">
-    <div id="world"></div>
-  </div>
-
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script>
-  $(".night").click(function() {
-    alert("testing");
-  });
-
-  var clouds = [];
-  var NUM_CLOUDS = 50;
-
-  function createCloud() {
-      var width = $(window).width();
-      var height = $(window).height();
-
-      var cloud = $("<div>").addClass("cloud").appendTo($("#world"));
-      cloud.data("x", parseInt(Math.random() * width / 2 - width / 4));
-      cloud.data("y", parseInt(Math.random() * height / 4 + height * 0.7));
-      cloud.data("z", parseInt(Math.random() * 10) * 100);
-      cloud.data("angle", parseInt(Math.random() * 360));
-      cloud.data("rotation", (Math.random() - 0.5) / 5);
-
-      updateCloud(cloud);
-      return cloud;
-  }
-
-  function createCloudClick() {
-    if (NUM_CLOUDS <= 100)
-    {
-      var width = $(window).width();
-      var height = $(window).height();
-
-      var cloud = $("<div>").addClass("cloud").appendTo($("#world"));
-      cloud.data("x", parseInt(event.pageX / 2 - width/4));
-      cloud.data("y", parseInt(event.pageY));
-
-      console.log(cloud.data("x"));
-      console.log(cloud.data("y"));
-
-      cloud.data("z", parseInt(Math.random() * 10) * 100);
-      cloud.data("angle", parseInt(Math.random() * 360));
-      cloud.data("rotation", (Math.random() - 0.5) / 5);
-
-      updateCloud(cloud);
-      NUM_CLOUDS++;
-      return cloud;
+<script>
+    var greetingElement = document.getElementById('greeting');
+    var curDate = new Date();
+    if (curDate.getHours() < 12) {
+        greetingElement.innerHTML = 'morning';
     }
-  }
-
-  function updateCloud(cloud) {
-      var z = cloud.data("z");
-
-      var transform = "translate3d(" + cloud.data("x") + "px," + cloud.data("y") + "px, " + cloud.data("z") + "px) rotateZ(" + cloud.data("angle") + "deg)";
-      cloud.css({
-          "-webkit-transform": transform,
-          "opacity": z / 1000
-
-      });
-      z += 1;
-      if (z == 1000) {
-          z = 0;
-      }
-      cloud.data("z", z);
-      cloud.data("angle", cloud.data("angle") + cloud.data("rotation"));
-  }
-
-  function updateClouds() {
-      for (var i = 0; i < NUM_CLOUDS; i++) {
-          updateCloud(clouds[i]);
-      }
-      setTimeout(updateClouds, 20);
-  }
-
-  $(function() {
-      for (var i = 0; i < NUM_CLOUDS; i++) {
-          clouds.push(createCloud());
-      }
-      updateClouds();
-
-  });
-
-  $('body').click(function() {
-      clouds.push(createCloudClick());
-      updateClouds();
-  });
-
-  </script>
-</body>
-</html>
+    else if (curDate.getHours() >= 12 && curDate.getHours() <= 17) {
+        greetingElement.innerHTML = 'afternoon';
+    }
+    else if (curDate.getHours() > 17 && curDate.getHours() <= 24) {
+        greetingElement.innerHTML = 'evening';
+    }
+    else {
+        greetingElement.innerHTML = 'day';
+    }
+</script>

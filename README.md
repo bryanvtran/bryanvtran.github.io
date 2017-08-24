@@ -1,2 +1,2 @@
-# bryanvtran.github.io
-Playground
+# bryanvtran.github.io - bryanvtran.com
+Currently redesigning the website in Jekyll. 
