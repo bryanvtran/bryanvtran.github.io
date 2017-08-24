@@ -19,8 +19,8 @@ layout: base
   {{ content }}
 
   <div class="project-nav">
-    {% if project.prev %}<a href="/projects/{{ project.prev }}">Prev</a>{% endif %}
+    {% if project.prev %}<a href="/{{ project.prev }}">Prev</a>{% endif %}
     <a href="/">Home</a>
-    {% if project.next %}<a href="/projects/{{ project.next }}">Next</a>{% endif %}
+    {% if project.next %}<a href="/{{ project.next }}">Next</a>{% endif %}
   </div>
 </div>

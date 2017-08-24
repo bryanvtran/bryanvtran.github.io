@@ -19,7 +19,7 @@ keywords: keywords,go,here
     <div class="projects__list">
     {% for project in site.data.projects reversed %}
         <div class="projects__list__item">
-            <a href="/projects/{{ project.slug }}">
+            <a href="/{{ project.slug }}">
                 <img class="projects__list__item__thumbnail" src="{{ project.thumbnail }}" alt="{{ project.title }}">
                 <p class="projects__list__item__title">{{ project.title }}</p>
                 <p class="projects__list__item__description">{{ project.shortDescription }}</p>
