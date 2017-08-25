@@ -1,0 +1,26 @@
+---
+layout: base
+---
+
+<div class="container project-intro">
+  {% assign project = site.data.projects[page.project.index] %}
+  <h1 class="project-intro__title">{{ project.title }}</h1>
+  <p class="project-intro__subtitle"><a target="_blank" href="//{{ project.website }}">{{ project.website }}</a> | {{ project.date }}</p>
+  <p class="project-intro__description">{{ project.description }}</p>
+</div>
+
+{% if project.headerImg %}
+<div class="project-header">
+  <img src="{{ project.headerImg }}" alt="{{ project.title }}">
+</div>
+{% endif %}
+
+<div class="container project-body">
+  {{ content }}
+
+  <div class="project-nav">
+    {% if project.prev %}<a href="/work/{{ project.prev }}">Prev</a>{% endif %}
+    <a href="/">Home</a>
+    {% if project.next %}<a href="/work/{{ project.next }}">Next</a>{% endif %}
+  </div>
+</div>

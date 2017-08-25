@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    font-size: $html-font-size;
+    line-height: $html-line-height;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    background: $white;
+    color: $font-color;
+    font-family: $body-font-family;
+    font-size: $font-size;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+  transition: $base-transition;
+  border-bottom: 1px solid $link-color;
+
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: $link-color-dark;
+    border-color: $link-color-dark;
+  }
+
+  &.underline {
+    color: $font-color;
+    border-bottom: 3px solid $primary-color-light;
+    -webkit-box-shadow: inset 0 -4px 0 $primary-color-light;
+    box-shadow: inset 0 -4px 0 $primary-color-light;
+    transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+      text-decoration: none;
+      background-color: $primary-color-light;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+p {
+  line-height: 2.4rem;
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  margin: 2rem 0 2rem 2rem;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+}
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+p {
+  color: $font-color-light;
+}
