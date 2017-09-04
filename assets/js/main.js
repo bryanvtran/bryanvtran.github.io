@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   photos.forEach(function(photo) {
     photo.addEventListener('click', function() {
-
-      viewer.children[0].src = this.children[0].src;
+      var path = this.children[0].src.split('/');
+      var name = path[path.length-1];
+      viewer.children[0].src = '/assets/images/photos/'+name;
       viewer.style.display = 'block';
     });
   });
