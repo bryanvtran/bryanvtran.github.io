@@ -25,6 +25,17 @@
 
         <link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}"/>
         <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" type="text/css">
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70073996-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-70073996-2');
+        </script>
+
     </head>
     <body>
         {% include header.html %}
