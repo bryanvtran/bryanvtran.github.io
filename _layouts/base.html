@@ -5,10 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
-
         <meta name="author" content="Bryan Tran">
-        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-        {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+        
+        <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+        <meta property="og:url" content="http://www.bryanvtran.com" />
+        {% if page.description %}
+        <meta name="description" content="{{ page.description }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta name="twitter:description" content="{{ page.description }}" />
+        {% endif %}
+        {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords }}" />
+        {% endif %}        
+        {% if page.image %}
+        <meta property="og:image" content="{{ page.image }}">
+        <meta name="twitter:image" content="{{ page.image }}">
+        {% endif %}
 
         <link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}"/>
         <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" type="text/css">
