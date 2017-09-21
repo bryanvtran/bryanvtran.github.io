@@ -59,6 +59,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   })
 
+  // for smooth scrolling
+  var links = document.querySelectorAll('.scroll');
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(link.getAttribute("href")).scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    });
+  });
+
   function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
   }
