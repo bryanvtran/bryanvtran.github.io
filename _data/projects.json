@@ -138,7 +138,7 @@
     "website": "www.assetcamp.io",
     "date": "2017",
     "description": "AssetCamp is a community where 3D Creators can showcase and sell their assets in a “Pay What You Want” marketplace. As Co-Founder, I built and deployed the web application using a technology stack consisting of Python, Django, Postgres, and Nginx. This is an ongoing project.",
-    "headerImg": "/assets/images/work/boxcamp/main.jpeg",
+    "headerImg": "/assets/images/work/assetcamp/main.jpg",
     "next": "amex"
   }
 ]
