@@ -139,6 +139,18 @@
     "date": "2017",
     "description": "AssetCamp is a community where 3D Creators can showcase and sell their assets in a “Pay What You Want” marketplace. As Co-Founder, I built and deployed the web application using a technology stack consisting of Python, Django, Postgres, and Nginx. This is an ongoing project.",
     "headerImg": "/assets/images/work/assetcamp/main.jpg",
+    "prev": "tesla",
     "next": "amex"
+  },
+  {
+    "title": "Tesla",
+    "slug": "tesla",
+    "shortDescription": "Dimensional Engineering",
+    "thumbnail": "/assets/images/work/tesla/logo.jpg",
+    "website": "www.tesla.com",
+    "date": "2017",
+    "description": "As a Software Engineering Intern on the Dimensional Engineering team, I designed and built web applications for data processing and 3D model visualizations utilizing the Django web framework and three.js.",
+    "headerImg": "/assets/images/work/tesla/main.jpg",
+    "next": "assetcamp"
   }
 ]
