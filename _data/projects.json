@@ -151,6 +151,7 @@
     "date": "2017",
     "description": "As a Software Engineering Intern on the Dimensional Engineering team, I designed and built web applications for data processing and 3D model visualizations utilizing the Django web framework and three.js.",
     "headerImg": "/assets/images/work/tesla/main.jpg",
+    "prev": "paypal",
     "next": "assetcamp"
   },
   {
