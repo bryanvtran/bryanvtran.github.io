@@ -152,5 +152,16 @@
     "description": "As a Software Engineering Intern on the Dimensional Engineering team, I designed and built web applications for data processing and 3D model visualizations utilizing the Django web framework and three.js.",
     "headerImg": "/assets/images/work/tesla/main.jpg",
     "next": "assetcamp"
+  },
+  {
+    "title": "PayPal",
+    "slug": "paypal",
+    "shortDescription": "NextGen Commerce",
+    "thumbnail": "/assets/images/work/paypal/logo.jpg",
+    "website": "www.paypal.com",
+    "date": "2018-Present",
+    "description": "I'm currently working as a Software Engineer at PayPal on the Next Generation Commerce (NGC) team, helping to maintain and build full-stack Javascript applications.",
+    "headerImg": "/assets/images/work/paypal/main.jpg",
+    "next": "tesla"
   }
 ]
